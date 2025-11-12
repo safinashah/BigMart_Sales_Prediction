@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import zipfile, os
+
+# 🔓 Automatically extract model if ZIP exists
+if not os.path.exists("bigmart_model.pkl") and os.path.exists("bigmart_model.zip"):
+    with zipfile.ZipFile("bigmart_model.zip", "r") as zip_ref:
+        zip_ref.extractall(".")
+
 
 # === Load Model ===
 with open("bigmart_model.pkl", "rb") as f:
