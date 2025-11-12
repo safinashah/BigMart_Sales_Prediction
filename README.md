@@ -2,6 +2,10 @@
 
 A Streamlit web app that predicts **BigMart item sales** using machine learning.
 
+## 🚀 Live Demo  
+[Click Here to View App](https://bigmartsalesprediction-i6ertk9f2skidmojkw2uub.streamlit.app/)
+
+
 ---
 
 ## 🚀 Project Overview
